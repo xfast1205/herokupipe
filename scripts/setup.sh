@@ -103,15 +103,6 @@ heroku config:set SFDX_AUTH_URL=$stagingSfdxAuthUrl -a $HEROKU_STAGING_APP_NAME
 prodSfdxAuthUrl=$(sfdx force:org:display --verbose -u $PROD_USERNAME --json | jq -r .result.sfdxAuthUrl)
 heroku config:set SFDX_AUTH_URL=$prodSfdxAuthUrl -a $HEROKU_PROD_APP_NAME
 
-# Add buildpacks to apps (to use latest remove version info)
-heroku buildpacks:add -i 1 https://github.com/heroku/salesforce-cli-buildpack#v3 -a $HEROKU_DEV_APP_NAME
-heroku buildpacks:add -i 1 https://github.com/heroku/salesforce-cli-buildpack#v3 -a $HEROKU_STAGING_APP_NAME
-heroku buildpacks:add -i 1 https://github.com/heroku/salesforce-cli-buildpack#v3 -a $HEROKU_PROD_APP_NAME
-
-heroku buildpacks:add -i 2 https://github.com/heroku/salesforce-buildpack#v3 -a $HEROKU_DEV_APP_NAME
-heroku buildpacks:add -i 2 https://github.com/heroku/salesforce-buildpack#v3 -a $HEROKU_STAGING_APP_NAME
-heroku buildpacks:add -i 2 https://github.com/heroku/salesforce-buildpack#v3 -a $HEROKU_PROD_APP_NAME
-
 # Create Pipeline
 heroku pipelines:create $HEROKU_PIPELINE_NAME -a $HEROKU_DEV_APP_NAME -s development $HEROKU_TEAM_FLAG
 heroku pipelines:add $HEROKU_PIPELINE_NAME -a $HEROKU_STAGING_APP_NAME -s staging
