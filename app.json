@@ -1,0 +1,39 @@
+{
+  "name": "heroku-pipe",
+  "version": "0.0.1",
+  "description": "Test application for the heroku pipelines",
+  "repository": "https://github.com/xfast1205/herokupipe",
+  "author": "aryzhkov",
+  "license": "ALv2",
+  "bugs": {
+    "url": "https://github.com/xfast1205/herokupipe/issues"
+  },
+  "homepage": "https://github.com/xfast1205/herokupipe",
+  "dependencies": {},
+  "devDependencies": {},
+  "buildpacks": [
+    {
+      "url": "https://github.com/xfast1205/aquiva-sfdx-buildpack.git"
+    }
+  ],
+  "env": {
+    "CONSUMER_KEY": {
+      "required": true
+    },
+    "SERVER_KEY": {
+      "required": true
+    },
+    "SF_USERNAME" : {
+      "required": true
+    },
+    "SF_TEST_LEVEL" : {
+      "required": true
+    },
+    "SRC_FOLDER" : {
+      "required": true
+    },
+    "NPM_TOKEN" : {
+      "required": true
+    }
+  }
+}
