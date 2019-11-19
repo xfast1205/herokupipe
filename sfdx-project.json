@@ -3,8 +3,8 @@
         {
             "path": "force-app",
             "default": true,
-            "package": "mypipedemo",
-            "versionName": "Winter 2020",
+            "package": "testpipe",
+            "versionName": "ver 0.1",
             "versionNumber": "0.1.0.NEXT"
         }
     ],
@@ -12,6 +12,6 @@
     "sfdcLoginUrl": "https://login.salesforce.com",
     "sourceApiVersion": "47.0",
     "packageAliases": {
-        "mypipedemo": "0Ho3X000000PAvlSAG"
+        "testpipe": "0Ho2o0000004CGiCAM"
     }
 }
