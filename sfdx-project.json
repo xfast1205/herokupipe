@@ -12,8 +12,7 @@
     "sfdcLoginUrl": "https://login.salesforce.com",
     "sourceApiVersion": "47.0",
     "packageAliases": {
-        "testpipe": "0Ho1i000000k9hVCAQ",
         "testpipe": "0Ho1i000000k9hQCAQ",
-        "testpipe@0.1.0-1": "04t1i000000sH7xAAE"
+        "testpipe": "0Ho1i000000k9hVCAQ"
     }
 }
