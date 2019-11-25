@@ -1,5 +1,5 @@
-public with sharing class NewClass {
-    public NewClass() {
+public with sharing class NewClass123 {
+    public NewClass123() {
         System.debug('New class');
     }
 
