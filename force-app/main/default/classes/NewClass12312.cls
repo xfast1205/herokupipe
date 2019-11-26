@@ -3,7 +3,7 @@ public with sharing class NewClass12312 {
         System.debug('New class');
     }
 
-    public static Account[] getAccount() {
+    public Account[] getAccount() {
         return [SELECT Id FROM Account];
     }
 }
