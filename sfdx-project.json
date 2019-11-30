@@ -2,10 +2,26 @@
     "packageDirectories": [
         {
             "path": "force-app",
-            "default": true
+            "default": true,
+            "package": "testmypipe",
+            "versionName": "ver 0.1",
+            "versionNumber": "0.1.0.NEXT"
+        },
+        {
+            "path": "force-app",
+            "package": "testnopipe",
+            "versionName": "ver 0.1",
+            "versionNumber": "0.1.0.NEXT",
+            "default": false
         }
     ],
-    "namespace": "",
+    "namespace": "testfonpipe",
     "sfdcLoginUrl": "https://login.salesforce.com",
-    "sourceApiVersion": "47.0"
+    "sourceApiVersion": "47.0",
+    "packageAliases": {
+        "testmypipe": "0Ho5J000000PAshSAG",
+        "testmypipe@0.1.0-1": "04t5J000000eA0IQAU",
+        "testnopipe": "0Ho5J000000PAsmSAG",
+        "testnopipe@0.1.0-1": "04t5J000000eA0NQAU"
+    }
 }
